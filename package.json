@@ -1,0 +1,12 @@
+{
+  "name": "cautious-ldap",
+  "version": "1.0.0",
+  "description": "Allow ldap users to self-manage their passwords.",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/mfinelli/cautious-ldap.git",
+    "type": "git"
+  },
+  "author": "Mario Finelli",
+  "license": "Apache-2.0"
+}
