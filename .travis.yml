@@ -7,6 +7,7 @@ addons:
     apt:
         packages:
             - libldap2-dev
+            - ldap-utils
 before_install:
     - npm install -g mocha
     - npm install -g yarn
