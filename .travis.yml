@@ -6,6 +6,7 @@ node_js:
 addons:
     apt:
         packages:
+            - slapd
             - libldap2-dev
             - ldap-utils
 before_install:
