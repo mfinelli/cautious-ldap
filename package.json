@@ -14,7 +14,8 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "ldap-client": "^3.1.3",
-    "pug": "^2.0.0-beta6"
+    "pug": "^2.0.0-beta6",
+    "ssha": "^1.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
