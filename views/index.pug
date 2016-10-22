@@ -3,4 +3,34 @@ html
   head
     title Change Your Password
   body
-    h1 Hello World
+    h1 Change Your Password
+    form(method='post')
+      div
+        label(for='username') Username
+        input(name='username' id='username' type='text')
+      div
+        label(for='old_password') Old password
+        input(name='old_password' id='old_password' type='password')
+      div
+        label(for='new_password') New password
+        input(name='new_password' id='new_password' type='password')
+      div
+        label(for='confirm_password') Confirm password
+        input(name='confirm_password' id='confirm_password' type='password')
+      button(type='submit') Change Password
+    h1 Forgot Password
+    h2 Step 1
+    form(method='post')
+      div
+        label(for='forgot_username') Username
+        input(name='forgot_username' id='forgot_username' type='text')
+      button(type='submit') Forgot Password
+    h2 Step 2
+    form(method='post')
+      div
+        label(for='auth_username') Username
+        input(name='auth_username' id='auth_username' type='text')
+      div
+        label(for'auth_code') Authorization Code
+        input(name='auth_code' id='auth_code' type='password')
+      button(type='submit') Authorize New Password Generation
