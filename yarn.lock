@@ -274,6 +274,19 @@ content-type@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.2.tgz#b7d113aee7a8dd27bd21133c4dc2529df1721eed"
 
+convict:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/convict/-/convict-1.5.0.tgz#28b09a443b2d4f0d9ad9eff56a29cacb0b287dec"
+  dependencies:
+    depd "1.1.0"
+    json5 "0.5.0"
+    lodash "4.16.2"
+    minimist "1.2.0"
+    moment "2.12.0"
+    validator "4.6.1"
+  optionalDependencies:
+    varify "0.1.1"
+
 cookie-signature@1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/cookie-signature/-/cookie-signature-1.0.6.tgz#e303a882b342cc3ee8ca513a79999734dab3ae2c"
@@ -328,7 +341,7 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
 
-depd@~1.1.0:
+depd@~1.1.0, depd@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.0.tgz#e1bd82c6aab6ced965b97b88b17ed3e528ca18c3"
 
@@ -387,6 +400,10 @@ escape-html@~1.0.3:
 escape-string-regexp@^1.0.2, escape-string-regexp@1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
+
+esprima@~1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-1.0.4.tgz#9f557e08fc3b4d26ece9dd34f8fbf476b62585ad"
 
 etag@~1.7.0:
   version "1.7.0"
@@ -704,6 +721,10 @@ json3@3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/json3/-/json3-3.3.2.tgz#3c0434743df93e2f5c42aee7b19bcb483575f4e1"
 
+json5@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.0.tgz#9b20715b026cbe3778fd769edccd822d8332a5b2"
+
 jsonpointer@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/jsonpointer/-/jsonpointer-4.0.0.tgz#6661e161d2fc445f19f98430231343722e1fcbd5"
@@ -793,6 +814,10 @@ lodash@^3.10.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
+lodash@4.16.2:
+  version "4.16.2"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.16.2.tgz#3e626db827048a699281a8a125226326cfc0e652"
+
 longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
@@ -833,6 +858,10 @@ minimist@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
+minimist@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
+
 mkdirp@^0.5.0, "mkdirp@>=0.5 0", mkdirp@0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
@@ -854,6 +883,10 @@ mocha:
     lodash.create "3.1.1"
     mkdirp "0.5.1"
     supports-color "3.1.2"
+
+moment@2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.12.0.tgz#dc2560d19838d6c0731b1a6afa04675264d360d6"
 
 ms@0.7.1:
   version "0.7.1"
@@ -1125,6 +1158,12 @@ readable-stream@~2.0.5:
     string_decoder "~0.10.x"
     util-deprecate "~1.0.1"
 
+redeyed@~0.4.2:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/redeyed/-/redeyed-0.4.4.tgz#37e990a6f2b21b2a11c2e6a48fd4135698cba97f"
+  dependencies:
+    esprima "~1.0.4"
+
 repeat-string@^1.5.2:
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.5.4.tgz#64ec0c91e0f4b475f90d5b643651e3e6e5b6c2d5"
@@ -1293,6 +1332,10 @@ tar@^2.0.0:
     fstream "^1.0.2"
     inherits "2"
 
+through@~2.3.4:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
+
 token-stream@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/token-stream/-/token-stream-0.0.1.tgz#ceeefc717a76c4316f126d0b9dbaa55d7e7df01a"
@@ -1348,6 +1391,17 @@ util-deprecate@~1.0.1:
 utils-merge@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.0.tgz#0294fb922bb9375153541c4f7096231f287c8af8"
+
+validator@4.6.1:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-4.6.1.tgz#f734ec60da5492b689beb3c422a8a0b013c3f984"
+
+varify@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/varify/-/varify-0.1.1.tgz#98854bf465438a520788cfca136e14f511155b1e"
+  dependencies:
+    redeyed "~0.4.2"
+    through "~2.3.4"
 
 vary@~1.1.0:
   version "1.1.0"
