@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
+const log = require('bunyan').createLogger({name: "cautious-ldap"});
 const config = require('./config/config');
 const router = {
   change: require('./routes/change')
@@ -10,6 +11,7 @@ const router = {
 if (config.get('app').templateOverrideDir === '') {
   app.set('views', path.join(__dirname, 'views'));
 } else {
+  log.info("template override directory set: " + config.get('app').templateOverrideDir);
   app.set('views', [config.get('app').templateOverrideDir, path.join(__dirname, 'views')]);
 }
 
@@ -24,5 +26,5 @@ app.get('/', function(req, res) {
 });
 
 app.listen(3000, function() {
-  console.log('cautious-ldap listening on port 3000');
+  log.info('cautious-ldap listening on port 3000');
 });
