@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const log = require('./config/log');
 const app = express();
-const log = require('bunyan').createLogger({name: 'cautious-ldap'});
 const config = require('./config/config');
 const router = {
   change: require('./routes/change')

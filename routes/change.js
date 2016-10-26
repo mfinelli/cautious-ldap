@@ -1,6 +1,6 @@
 const express = require('express'),
   router = express.Router(),
-  log = require('bunyan').createLogger({name: 'cautious-ldap'}),
+  log = require('../config/log'),
   validPassword = require('../lib/validPassword');
 
 router.post('/change', function(req, res) {
