@@ -28,7 +28,12 @@ const config = convict({
       format: Boolean,
       default: false,
       env: 'CL_LDAP_SSL'
-    }
+    },
+    searchBase: {
+      doc: 'Default base for all searches.',
+      format: String,
+      default: '',
+      env: 'CL_LDAP_BASE'
   }
 });
 
