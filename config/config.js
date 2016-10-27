@@ -19,7 +19,7 @@ const config = convict({
     },
     port: {
       doc: 'Port of the LDAP server.',
-      format: "port",
+      format: 'port',
       default: 389,
       env: 'CL_LDAP_PORT'
     },
@@ -34,6 +34,7 @@ const config = convict({
       format: String,
       default: '',
       env: 'CL_LDAP_BASE'
+    }
   }
 });
 
