@@ -1,7 +1,20 @@
 const convict = require('convict');
 
 const config = convict({
-  admin: {},
+  admin: {
+    user: {
+      doc: '(full) Distinguished name (DN) of the admin user/',
+      format: String,
+      default: null,
+      env: 'CL_ADMIN_DN'
+    },
+    password: {
+      doc: 'Password for the LDAP admin account.',
+      format: String,
+      default: '',
+      env: 'CL_ADMIN_PASSWORD'
+    }
+  },
   app: {
     templateOverrideDir: {
       doc: 'Directory where custom template overrides live.',
@@ -32,8 +45,14 @@ const config = convict({
     searchBase: {
       doc: 'Default base for all searches.',
       format: String,
-      default: '',
+      default: 'dc=com',
       env: 'CL_LDAP_BASE'
+    },
+    filter: {
+      doc: 'Filter to use when searching for users (will replace %USER%).',
+      format: String,
+      default: '(|(uid=%USER%))',
+      env: 'CL_LDAP_FILTER'
     }
   }
 });
