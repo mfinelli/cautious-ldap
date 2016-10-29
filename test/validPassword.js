@@ -1,5 +1,3 @@
-/* global it */
-
 const expect = require('chai').expect;
 const validPassword = require('../lib/validPassword');
 
