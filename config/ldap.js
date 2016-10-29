@@ -1,7 +1,9 @@
+'use strict';
+
 const LDAP = require('ldap-client'),
   config = require('./config');
 
-let protocol = config.get('ssl') ? 'ldaps://' : 'ldap://';
+let protocol = config.get('ldap').ssl ? 'ldaps://' : 'ldap://';
 let host = config.get('ldap').hostname;
 let port = config.get('ldap').port;
 
