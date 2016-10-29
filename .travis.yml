@@ -18,9 +18,11 @@ addons:
 before_install:
     - npm install -g mocha
     - npm install -g yarn
+    - npm install -g eslint
 install:
     - yarn install
 script:
+    - eslint *.js config/*.js lib/*.js routes/*.js test/*.js
     - mocha test
 notifications:
     email: false
